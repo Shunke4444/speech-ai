@@ -63,7 +63,7 @@ export default function MicrophoneComponent() {
             {recordingComplete ? "Recorded" : "Recording"}
           </p>
           <p className="text-sm text-muted-foreground">
-            {recordingComplete ? "Lis." : "Start speaking..."}
+            {recordingComplete ? "Listening..." : "Start speaking..."}
           </p>
         </div>
         {isRecording && (
@@ -98,7 +98,7 @@ export default function MicrophoneComponent() {
           // Button for starting recording
           <button
             onClick={startRecording}
-            className="mt-10 m-auto flex items-center justify-center bg-green-400 hover:bg-green-500 rounded-full w-20 h-20 focus:outline-none"
+            className="mt-10 m-auto flex items-center justify-center bg-green hover:bg-green-500 rounded-full w-20 h-20 focus:outline-none"
           >
             <FaMicrophone className="text-4xl text-white" />
           </button>
